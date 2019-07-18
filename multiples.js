@@ -3,23 +3,17 @@
  * @param  {Number} n Number that is to be used for calculating multiples up to that Number
  * @return {Number}
  */
-exports.sumOfAMultiple = function( n ) {
+exports.sumOfAMultiple = function(n) {
   let sum = 0;
 
   // do your work here
 
-  let newArr = [];
-
-  for(i = 0; i < n; i++) {
-    if(i % 3 === 0) {
-      newArr.push(i)
-    } else if(i % 5 === 0) {
-      newArr.push(i);
+  for (i = 0; i < n; i++) {
+    if (i % 3 === 0) {
+      sum += i;
+    } else if (i % 5 === 0) {
+      sum += i;
     }
-  }
-
-  for(i = 0; i < newArr.length; i++) {
-    sum += newArr[i];
   }
 
   return sum;
